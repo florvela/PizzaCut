@@ -1,0 +1,102 @@
+@font-face{
+	font-family: helvetica_neue;
+	src: url("Fonts/HelveticaNeue-UltraLight.otf");
+}
+*{
+	padding: 0;
+	margin: 0;
+
+}
+body{
+	background-color: #F6E4CE;
+}
+
+
+.registration_field{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    font-family: helvetica_neue;
+	font-weight: lighter;
+    position: absolute;
+	flex-direction: column;
+	align-items: center;
+	width: 65%;
+	min-width: 200px;
+	margin-left: 18%;
+	margin-top: 100px;
+	flex-direction: column;
+}
+.registration_field-form-fields{
+	display:none;
+	flex-direction: column;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	max-width: 200px;
+	width: 100%;
+}
+.registration_field-login-btn, .registration_field-signup-btn{
+	background-color: #C23B3B;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 24px;
+	color: white;
+	border: none;
+	width: 40%;
+	min-width: 200px;
+	height: 37px;
+	cursor: pointer;
+	transition: background-color .13s;
+}
+
+.registration_field-signup-textarea, .registration_field-login-textarea{
+	border-style: none none solid none; 
+	background-color:#f6e4ce; 
+	height: 20px;
+	font-size: 20px;
+	border-bottom-color: lightgray;
+	transition: transform 0.3s;
+	margin-top: 5px;
+}
+.registration_field-signup-textarea::placeholder, .registration_field-login-textarea::placeholder{
+	font-size: 20px;
+	font-family: helvetica_neue;
+	font-weight: lighter;
+}
+.registration_field-signup-textarea:focus, .registration_field-login-textarea:focus{
+	outline: none;
+}
+
+.registration_field-btn, .login_field-btn{
+	margin-top: 10px;
+	background-color: #F4C725;
+	font-size: 24px;
+	color: white;
+	border: none;
+	width: 100%;
+	height: 45px;
+	cursor: pointer;
+	transition: background-color .13s;
+	font-family: helvetica_neue;
+	font-weight: lighter;
+}
+.registration_field-btn:hover{
+	background-color: #F6D725;
+}
+
+.footer{
+	position: absolute;
+	bottom: 0;
+	background-color: #D25252;
+	width: 100%;
+	height: 40px;
+}
+.footer-paragraph{
+	padding-top: 10px;
+	text-align: center;
+	font-family: helvetica_neue;
+	color: white;
+}

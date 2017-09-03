@@ -1,0 +1,207 @@
+@font-face{
+	font-family: helvetica_neue;
+	src: url("Fonts/HelveticaNeueLTStd_Lt.otf");
+}
+@font-face{
+	font-family: helvetica_neue_lt;
+	src: url("Fonts/HelveticaNeue-UltraLight.otf");
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+#mobile_bars{
+	color: white;
+	display: none;
+}
+.background_img{
+	position: absolute;
+	width: 100%;
+	height: 750px;
+	z-index: -1;
+}
+/** ------------------ TABLA DE INFORMACION PARA EL TUTORIAL ------------------ **/
+.information{
+	width: 100%;
+	margin: auto;
+	border-collapse: collapse;
+	font-family: helvetica_neue_lt;
+	cursor: default;
+	background-color: white;
+}
+.information-img{
+	min-width: 230px;
+}
+.information_row{
+	width: 100%;
+	background-color: #f6e4ce;
+	border-top: 1px solid black;
+	
+}
+.information_row:nth-child(even){
+	background-color: white;
+}
+.information_col{
+	text-align:center;
+	padding: 0 100px;
+}
+.information_col-text-p{
+	font-size: 30px;
+	padding: 15px 0 40px 0;
+}
+.information_col-text-h2{
+	font-size: 45px;
+	padding: 30px 0 15px 0;
+}
+.tutorial{
+	padding-top: 140px;
+	width: 100%;
+}
+.pregunta{
+	padding-bottom: 5px;
+	text-align: left;
+	font-size: 30px;
+}
+.respuesta {
+	text-align: left;
+	font-size: 25px;
+	padding-bottom: 40px; 
+}
+.information_col-otras{
+	padding: 30px 0 20px 0;
+	text-align: left;
+	font-size: 45px;
+}
+.information-img{
+	width: 60%;
+	padding-bottom: 40px;
+}
+
+/** ------------------ FOOTER ------------------ **/
+.footer{
+	background-color: #D25252;
+	height: 100%;
+	padding-top: 5px;
+}
+.footer-paragraph{
+	text-align: center;
+	font-family: helvetica_neue;
+	color: white;
+}
+/** ------------------ SUBHEADER (Para los scrolls) ------------------ **/
+.subheader{
+	height: 70px;
+	width: 100%;
+	background-color: white;
+	position: fixed;
+	margin-top: 70px;
+	text-align: center;
+	font-family: helvetica_neue_lt;
+	font-size: 20px;
+	border-bottom: 1px solid grey;
+}
+.subheader-link{
+	display: block;
+	width: 15%;
+	min-width: 140px;
+	height: 60px;
+	float: right;
+	padding-top: 10px; 
+	-webkit-transition: background-color .13s;
+}
+.subheader-link:hover{
+	display: block;
+	background-color: #EEEEEE;
+	color:  #C23B3B;
+	cursor: pointer;
+	text-decoration: none;
+}
+.subheader-link:not(:hover){
+	display: block;
+}
+
+@media screen and (min-width: 502px) and (max-width: 680px){
+	.subheader-link{
+		padding-top: 10px;
+		width: 25%;
+		min-width: 0;
+		font-size: 18px;
+		height: 60px;
+	}
+	.subheader{
+		height: 70px;
+	}
+	.tutorial{
+		padding-top: 120px;
+	}
+}
+@media screen and (min-width: 470px) and (max-width: 501px){
+	.subheader{
+		display: none;
+	}
+	.tutorial{
+		margin-top: -150px;
+	}
+}
+
+@media screen and (min-width: 283px) and (max-width: 470px){
+	.subheader{
+		display: none;
+	}
+	.subheader-link{
+		padding-top: 10px;
+		width: 25%;
+		min-width: 0;
+		font-size: 15px;
+		height: 60px;
+	}
+
+	.tutorial{
+		margin-top: -150px;
+		
+		width: 100%;
+	}
+	.information{
+		font-family: helvetica_neue;
+	}
+	.information_col{
+		text-align:center;
+		padding: 0;
+	}
+	.information_col-text-p{
+		font-size: 20px;
+		padding: 15px 0 40px 0;
+	}
+	.information_col-text-h2{
+		font-size: 25px;
+		padding: 30px 0 15px 0;
+	}
+}
+
+@media screen and (min-width: 199px) and (max-width: 283px){
+	.information{
+		font-family: helvetica_neue;
+	}
+	.subheader-link{
+		display: none;
+	}
+	.subheader{
+		display: none;
+	}
+	.tutorial{
+		margin-top: -150px;
+		width: 100%;
+	}
+	.information_col{
+		text-align:center;
+		padding: 0;
+	}
+	.information_col-text-p{
+		font-size: 15px;
+		padding: 15px 0 40px 0;
+	}
+	.information_col-text-h2{
+		font-size: 23px;
+		padding: 30px 0 15px 0;
+	}
+}

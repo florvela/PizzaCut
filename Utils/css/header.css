@@ -1,0 +1,239 @@
+.menu_bar{
+	background-color: #C23B3B;
+	height: 70px;
+	width: 100%;
+}
+.menu_bar--ayuda{
+	background-color: #C23B3B;
+	height: 70px;
+	width: 100%;
+	position: fixed;
+}
+.menu_bar-link{
+	display: block;
+	height: 45px;
+	padding-top: 25px; 
+	-webkit-transition: background-color .13s;
+}
+.selected, .menu_bar-link:hover{
+	display: block;
+	height: 45px;
+	background-color: #D25252;
+	color: white;
+	text-decoration: none;
+}
+.menu_bar-link:not(:hover){
+	display: block;
+	height: 45px;
+}
+.menu_bar-img{
+	height: 65px;
+	display: block;
+	margin: auto;
+}
+.menu_bar-link{
+	color: white;
+	text-decoration: none;
+	display: block;
+	float: right;
+	font-family: helvetica_neue_lt;
+	font-size: 20px;
+	height: 45px;
+	width: 10%;
+	text-align: center;
+	cursor: pointer;
+}
+.menu_bar-form,.menu_bar--bs-form{
+	right: 0;
+	width: 10%;
+	height: 200px;
+	position: absolute;
+	margin-right: 3px;
+	margin-top: 70px;
+	background-color: green;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+
+.menu_bar-form--ayuda{
+	right: 0;
+	width: 10%;
+	height: 200px;
+	top: 72px;
+	position: absolute;
+	background-color: green;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+
+.menu_bar-link-textarea{
+	height: 80%;
+	font-size: 15px;
+	padding: 5px;
+	overflow: auto;
+    outline: none;
+    border-top:none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    font-family: helvetica_neue_lt;
+}
+.menu_bar-link-textarea::placeholder{
+	font-family: helvetica_neue_lt;
+	color: #D1D1D1;
+}
+.menu_bar-link-btn{
+	background-color: #F4C725;
+	font-size: 20px;
+	color: white;
+	border: none;
+	height: 20%;
+	cursor: pointer;
+	transition: background-color .13s;	
+}
+.menu_bar-link-btn:hover{
+	background-color: #F6D725;
+}
+
+.menu_bar-form,.menu_bar--bs-form, .menu_bar-form--ayuda{
+	right: 0;
+	width: 20%;
+	min-width: 150px;
+	height: 200px;
+	position: absolute;
+	margin-top: 70px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+
+.menu_bar--bs-form textarea{
+	font-size: 20px;
+	width: 100%;
+}
+.menu_bar-form textarea, .menu_bar-form--ayuda textarea{
+ 	font-size: 20px;
+	width: 92.7%;	
+ }
+.menu_bar-link-textarea{
+	height: 80%;
+	width: 96%;
+	padding: 10px;
+	overflow: auto;
+    outline: none;
+    border-top:none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    font-family: helvetica_neue_lt;
+}
+.menu_bar-link-textarea::placeholder{
+	font-family: helvetica_neue_lt;
+	color: #D1D1D1;
+	font-size: 20px;
+}
+.menu_bar-link-btn{
+	background-color: #F4C725;
+	font-size: 20px;
+	color: white;
+	margin-top: -4px;
+	width: 100%;
+	border: none;
+	height: 20%;
+	cursor: pointer;
+	transition: background-color .13s;	
+}
+.menu_bar-link-btn:hover{
+	background-color: #F6D725;
+}
+
+/*---------------Si tiene BOOTSTRAP---------------*/
+
+.menu_bar--bs{
+	background-color: #C23B3B;
+	height: 70px;
+	width: 100%;
+	position: absolute;
+}
+.menu_bar--bs-link{
+	display: block;
+	padding-top: 23px; 
+	color: white;
+	text-decoration: none;
+	float: right;
+	font-family: helvetica_neue_lt;
+	font-size: 20px;
+	height: 70px;
+	width: 10%;
+	min-width: 120px;
+	text-align: center;
+	cursor: pointer;
+	-webkit-transition: background-color .13s;
+
+}
+.selected, .menu_bar--bs-link:hover{
+	display: block;
+	height: 70px;
+	background-color: #D25252;
+	color: white;
+	text-decoration: none;
+}
+
+.selected:focus{
+	color: white;
+	background-color: #D25252;
+	text-decoration: none;
+}
+.menu_bar--bs-link:not(:hover){
+	display: block;
+	height: 70px;
+}
+
+
+
+@media screen and (min-width: 502px) and (max-width: 960px){
+	.menu_bar-form, .menu_bar-link, .menu_bar--bs-form, .menu_bar--bs-link{
+		width: 20%;
+		min-width: 0;
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 501px), screen and (orientation: landscape) and (max-width: 400px){
+	.menu_bar, .menu_bar--ayuda, .menu_bar--bs{
+		height: 50px;
+		width: 100%;
+		padding: 5px 0 0 0;
+		z-index: 10;
+		position: relative;
+	}
+	.menu_bar--bs .menu_bar--bs-link:nth-child(7),.menu_bar--ayuda .menu_bar-link:nth-child(7), .menu_bar .menu_bar-link:nth-child(7){
+		border-bottom: 1px solid white; 
+	}
+	#mobile_bars{
+		display: block;
+		width: 10%;
+	}
+	.menu_bar .menu_bar-link, .menu_bar--bs .menu_bar--bs-link, .menu_bar--ayuda .menu_bar-link{
+		width: 100%;
+		padding: 0;
+		height: 30px;
+		background-color: #C23B3B;
+		display: none;		
+	}
+	.menu_bar-form--ayuda, .menu_bar-form,.menu_bar--bs-form{
+		width: 100%;
+		height: 150px;
+		top: 120px;
+		position: absolute;
+		z-index: 1;
+		
+	}
+}
